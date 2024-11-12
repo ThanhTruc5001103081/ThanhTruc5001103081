@@ -1,4 +1,3 @@
-## Hi there 👋
 
 <!--
 **ThanhTruc5001103081/ThanhTruc5001103081** is a 

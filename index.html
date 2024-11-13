@@ -3,19 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> VÕ TRẦN THANH TRÚCTRÚC</title>
+    <title>CV VÕ TRẦN THANH TRÚC</title>
     <style>
         /* Thiết lập kiểu dáng chung */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f0f8ff; /* Màu nền nhẹ */
+            background-color: #e0f7fa; /* Màu nền xanh mint */
         }
 
         .cv-container {
             width: 80%;
-            max-width: 900px;
+            max-width: 1000px;
             margin: 50px auto;
             padding: 20px;
             background-color: white;
@@ -34,13 +34,12 @@
             height: 120px;
             border-radius: 50%;
             object-fit: cover;
-            border: 3px solid #00bfae; /* Xanh mint */
+            border: 3px solid #4caf50;
         }
 
         .header h1 {
             font-size: 28px;
             margin-top: 10px;
-            color: #00bfae; /* Xanh mint */
         }
 
         .header p {
@@ -48,15 +47,16 @@
             color: #555;
         }
 
-        /* Bố cục các phần của CV */
+        /* Bố cục 2 cột */
         .cv-content {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
+            display: flex;
+            flex-wrap: wrap;
             gap: 30px;
-            margin-top: 20px;
         }
 
         .cv-section {
+            flex: 1;
+            min-width: 250px;
             padding: 20px;
             background-color: #f9f9f9;
             border-radius: 8px;
@@ -65,7 +65,7 @@
 
         .cv-section h2 {
             text-align: center;
-            color: #00bfae; /* Xanh mint */
+            color: #4caf50;
             font-size: 22px;
             margin-bottom: 15px;
         }
@@ -79,10 +79,9 @@
             margin-bottom: 10px;
         }
 
-        .contact-info, .skills, .hobbies, .education, .experience {
-            font-size: 16px;
-            line-height: 1.6;
-            color: #555;
+        /* Các thông tin cá nhân */
+        .contact-info {
+            margin-bottom: 20px;
         }
 
         .contact-info p {
@@ -93,36 +92,25 @@
             font-weight: bold;
         }
 
-        /* Điều chỉnh khi màn hình nhỏ */
-        @media (max-width: 768px) {
-            .cv-content {
-                grid-template-columns: 1fr;
-            }
+        /* Thêm một số kiểu dáng khác */
+        .bio, .goals {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #555;
         }
-
-        /* Màu nền của các phần */
-        .cv-section:nth-child(odd) {
-            background-color: #e0f7f6; /* Màu xanh mint nhạt */
-        }
-
-        .cv-section:nth-child(even) {
-            background-color: #ffffff; /* Màu trắng */
-        }
-
     </style>
 </head>
 <body>
-
     <div class="cv-container">
         <!-- Phần thông tin cá nhân -->
         <div class="header">
-            <img src="https://github.com/ThanhTruc5001103081/ThanhTruc5001103081/blob/main/2024.jpg" alt="Ảnh đại diện" class="profile-img">
-            <div class="header">
+            <!-- Chèn ảnh đại diện -->
+<img src="https://github.com/ThanhTruc5001103081/ThanhTruc5001103081/blob/main/2024.jpg" alt="Ảnh đại diện" class="https://github.com/ThanhTruc5001103081/ThanhTruc5001103081/blob/main/2024.jpg">
+        <div class="header">
          <h1>VÕ TRẦN THANH TRÚC</h1>
         </div>
         <!-- Thông tin liên hệ -->
-        <div class="contact-info">/-strong/-heart:>:o:-((:-h 
-            <p><span>📅 Ngày sinh:</span> 05/06/2006</p>
+        <div class="contact-info">/-strong/-heart:>:o:-((:-h <p><span>📅 Ngày sinh:</span> 05/06/2006</p>
             <p><span>📞 Điện thoại:</span> 0396801131</p>
             <p><span>📧 Email:</span> 5001103081@student.hcmue.edu.vn</p>
             <p><span>📍 Địa chỉ:</span> 289 Tô Hiến Thành - Phường 13 - quận 8, Hồ Chí Minh</p>
@@ -187,4 +175,4 @@
         </div>
     </div>
 </body>
-</html>
+</htlm>

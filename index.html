@@ -1,118 +1,188 @@
-
-           
-
 <!DOCTYPE html>
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Giới Thiệu Bản Thân - Võ Trần Thanh </title>
+    <title>CV VÕ TRẦN THANH TRÚCTRÚC</title>
     <style>
+        /* Thiết lập kiểu dáng chung */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #E0F7FA; /* Nền xanh mint */
+            background-color: #e0f7fa; /* Màu nền xanh mint */
         }
-        .container {
-            display: flex;
-            justify-content: space-between;
+
+        .cv-container {
+            width: 80%;
+            max-width: 1000px;
+            margin: 50px auto;
             padding: 20px;
-        }
-        .profile, .skills {
-            width: 48%;
-            background-color: #ffffff;
-            padding: 20px;
+            background-color: white;
             border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
         }
-        h1 {
+
+        /* Header phần thông tin cá nhân */
+        .header {
             text-align: center;
-            color: #00796B;
-        }
-        h2 {
-            color: #00796B;
-        }
-        p {
-            line-height: 1.6;
-        }
-        .contact-info, .education, .work-experience, .achievements, .goals {
             margin-bottom: 20px;
         }
-        .contact-info p, .education p, .work-experience p, .achievements p, .goals p {
-            margin: 5px 0;
-        }
-        .skills-list {
-            list-style-type: none;
-            padding: 0;
-        }
-        .skills-list li {
-            background-color: #B2EBF2;
-            padding: 8px;
-            margin-bottom: 8px;
-            border-radius: 4px;
-        }
-        /* CSS cho ảnh */
-        .profile img {
+
+        .profile-img {
             width: 120px;
             height: 120px;
-            border-radius: 50%; /* Cắt ảnh thành hình tròn */
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #4caf50;
+        }
+
+        .header h1 {
+            font-size: 28px;
+            margin-top: 10px;
+        }
+
+        .header p {
+            font-size: 16px;
+            color: #555;
+        }
+
+        /* Bố cục 2 cột */
+        .cv-content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+
+        .cv-section {
+            flex: 1;
+            min-width: 250px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .cv-section h2 {
+            text-align: center;
+            color: #4caf50;
+            font-size: 22px;
+            margin-bottom: 15px;
+        }
+
+        .cv-section ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .cv-section ul li {
+            margin-bottom: 10px;
+        }
+
+        /* Các thông tin cá nhân */
+        .contact-info {
             margin-bottom: 20px;
+        }
+
+        .contact-info p {
+            margin: 5px 0;
+        }
+
+        .contact-info span {
+            font-weight: bold;
+        }
+
+        /* Thêm một số kiểu dáng khác */
+        .bio, .goals {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #555;
         }
     </style>
 </head>
 <body>
-
-    <h1>Giới Thiệu Bản Thân</h1>
-
-    <div class="container">
+    <div class="cv-container">
         <!-- Phần thông tin cá nhân -->
-        <div class="profile">
-            <h2>Thông Tin Cá Nhân</h2>
-            <div class="contact-info">
-                <img src="2024.jpg" alt="Ảnh đại diện" class="profile-img">       
-                <p><strong>Họ và Tên:</strong > Võ Trần Thanh Trúc</p>
-                <p><strong>Ngày Sinh:</strong> 05/06/2006</p>
-                <p><strong>Số Điện Thoại:</strong> 0396801131</p>
-                <p><strong>Email:</strong> tranthanhtrucvo@gmail.com</p>
-                <p><strong>Địa Chỉ:</strong> 289 Tô Hiến Thành, Phường 13, Q10 ,TP Hồ Chí Minh</p>
+        <div class="header">
+            <img src="2024.jpg" alt="Ảnh đại diện" class="profile-img">
+            <h1>VÕ TRẦN THANH TRÚC</h1>
+            <p>Gia sư Tin Học</p>
+        </div>
+
+        <!-- Thông tin liên hệ -->
+        <div class="contact-info">
+            <p><span>📅 Ngày sinh:</span> 05/06/2006</p>
+            <p><span>📞 Điện thoại:</span> 0396801131</p>
+            <p><span>📧 Email:</span> 5001103081@student.hcmue.edu.vn</p>
+            <p><span>📍 Địa chỉ:</span> 289 Tô Hiến Thành - Phường 13 - quận 8, Hồ Chí Minh</p>
+        </div>
+
+        <!-- Bố cục thông tin chính -->
+        <div class="cv-content">
+            <!-- Phần giới thiệu bản thân -->
+            <div class="cv-section">
+                <h2>Giới Thiệu Bản Thân</h2>
+                <p class="bio"> Người vui vẻ, hoạt bát,cởi mở.</p>
             </div>
 
-            <div class="education">
-                <p><strong>Học Vấn:</strong> Sinh viên năm nhất, Chuyên ngành: Sư phạm Tin học, Trường Đại học Sư phạm TP.HCM</p>
+            <!-- Phần học vấn -->
+            <div class="cv-section">
+                <h2>Học Vấn</h2>
+                <ul>
+                    <li><strong>Sinh viên năm nhất</strong></li>
+                    <li><strong>Trường:</strong> Đại học Sư Phạm Thành Phố Hồ Chí Minh</li>
+                    <li><strong>Chuyên ngành:</strong> Sư phạm Tin học</li>
+                </ul>
             </div>
 
-            <div class="work-experience">
-                <p><strong>Kinh Nghiệm Làm Việc:</strong> sinh viên SP Tin Học,biết lập trình cơ bản,có khả năng giao tiếp,thuyết trình.</p>
+            <!-- Phần kinh nghiệm -->
+            <div class="cv-section">
+                <h2>Kinh Nghiệm Làm Việc</h2>
+                <ul>
+                    <li> Trình độ 12/12, biết lập trình cơ bản, có khả năng giao tiếp tốt</li>
+                </ul>
             </div>
+        </div>
 
-            <div class="achievements">
-                <p><strong>Thành Tích:</strong> Kết quả Kì thi Tốt nghiệp THPT Quốc Gia 2024:</p>
+        <!-- Phần thành tích -->
+        <div class="cv-section">
+            <h2>Thành Tích</h2>
+            <ul>
+                <li><strong>Kết quả Kì thi Tốt nghiệp THPT Quốc Gia 2024:</strong></li>
                 <ul>
                     <li>Toán: 8,2</li>
                     <li>Vật Lý: 8,0</li>
                     <li>Hóa: 8.25</li>
                 </ul>
-            </div>
+            </ul>
+        </div>
 
-            <div class="goals">
-                <p><strong>Mục Tiêu Nghề Nghiệp:</strong> Đem kiến thức đã được học truyền tải lại cho học sinh, hi vọng đem lại kiến thức cho học sinh sau những giờ học vui nhộn.</p>
-            </div>
+        <!-- Phần mục tiêu nghề nghiệp -->
+        <div class="cv-section">
+            <h2>Mục Tiêu Nghề Nghiệp</h2>
+            <p class="goals">Muốn đem những kiến thức được học truyền tải lại cho các bạn học sinh, tạo ra những giờ học thú vị, vui nhộn nhưng cũng không kém phầm hấp dẫn.</p>
+        </div>
+
+        <!-- Thông tin thêm -->
+        <div class="cv-section">
+            <h2>Thông Tin Thêm</h2>
+            <p class="goals"><strong>Thời gian rãnh:</strong></p>
+            <ul>
+                <li>  mỗi buổi tối trong tuần và cả ngày vào thứ 7 và Chủ nhật</li>
+            </ul>
         </div>
 
         <!-- Phần kỹ năng -->
-        <div class="skills">
+        <div class="cv-section">
             <h2>Kỹ Năng</h2>
-            <ul class="skills-list">
+            <ul>
                 <li>Giao tiếp</li>
                 <li>Quản lý thời gian</li>
                 <li>Microsoft Office</li>
-                <li>Tiếng Anh (cơ bản)</li>
-                <li> Kết nối với mọi người xung quanhquanh</li>
-                        
+                <li> Kết nối với bạn bè xung quanhquanh</li>
+                       
             </ul>
         </div>
     </div>
-
 </body>
 </html>

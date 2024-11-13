@@ -3,19 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV VÕ TRẦN THANH TRÚC</title>
+    <title> VÕ TRẦN THANH TRÚCTRÚC</title>
     <style>
         /* Thiết lập kiểu dáng chung */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #e0f7fa; /* Màu nền xanh mint */
+            background-color: #f0f8ff; /* Màu nền nhẹ */
         }
 
         .cv-container {
             width: 80%;
-            max-width: 1000px;
+            max-width: 900px;
             margin: 50px auto;
             padding: 20px;
             background-color: white;
@@ -34,12 +34,13 @@
             height: 120px;
             border-radius: 50%;
             object-fit: cover;
-            border: 3px solid #4caf50;
+            border: 3px solid #00bfae; /* Xanh mint */
         }
 
         .header h1 {
             font-size: 28px;
             margin-top: 10px;
+            color: #00bfae; /* Xanh mint */
         }
 
         .header p {
@@ -47,16 +48,15 @@
             color: #555;
         }
 
-        /* Bố cục 2 cột */
+        /* Bố cục các phần của CV */
         .cv-content {
-            display: flex;
-            flex-wrap: wrap;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
             gap: 30px;
+            margin-top: 20px;
         }
 
         .cv-section {
-            flex: 1;
-            min-width: 250px;
             padding: 20px;
             background-color: #f9f9f9;
             border-radius: 8px;
@@ -65,7 +65,7 @@
 
         .cv-section h2 {
             text-align: center;
-            color: #4caf50;
+            color: #00bfae; /* Xanh mint */
             font-size: 22px;
             margin-bottom: 15px;
         }
@@ -79,9 +79,10 @@
             margin-bottom: 10px;
         }
 
-        /* Các thông tin cá nhân */
-        .contact-info {
-            margin-bottom: 20px;
+        .contact-info, .skills, .hobbies, .education, .experience {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #555;
         }
 
         .contact-info p {
@@ -92,35 +93,63 @@
             font-weight: bold;
         }
 
-        /* Thêm một số kiểu dáng khác */
-        .bio, .goals {
-            font-size: 16px;
-            line-height: 1.6;
-            color: #555;
+        /* Điều chỉnh khi màn hình nhỏ */
+        @media (max-width: 768px) {
+            .cv-content {
+                grid-template-columns: 1fr;
+            }
         }
+
+        /* Màu nền của các phần */
+        .cv-section:nth-child(odd) {
+            background-color: #e0f7f6; /* Màu xanh mint nhạt */
+        }
+
+        .cv-section:nth-child(even) {
+            background-color: #ffffff; /* Màu trắng */
+        }
+
     </style>
 </head>
 <body>
+
     <div class="cv-container">
         <!-- Phần thông tin cá nhân -->
         <div class="header">
-            <!-- Chèn ảnh đại diện -->
-<img src="https://github.com/ThanhTruc5001103081/ThanhTruc5001103081/blob/main/2024.jpg" alt="Ảnh đại diện" class="https://github.com/ThanhTruc5001103081/ThanhTruc5001103081/blob/main/2024.jpg">
-        <div class="header">
-         <h1>VÕ TRẦN THANH TRÚC</h1>
-        </div>
-        <!-- Thông tin liên hệ -->
-        <div class="contact-info">
-            <p><span>📅 Ngày sinh:</span> 05/06/2006</p>
-            <p><span>📞 Điện thoại:</span> 0396801131</p>
-            <p><span>📧 Email:</span> 5001103081@student.hcmue.edu.vn</p>
-            <p><span>📍 Địa chỉ:</span> 289 Tô Hiến Thành - Phường 13 - quận 8, Hồ Chí Minh</p>
+            <img src="images/your-image.jpg" alt="Ảnh đại diện" class="profile-img">
+            <h1>VÕ TRẦN THANH TRÚC</h1>
+            <p>Sinh viên Sư Phạm</p>
         </div>
 
-        <!-- Bố cục thông tin chính -->
-        <div class="cv-content">
-            <!-- Phần giới thiệu bản thân -->
-            <div class="cv-section">
+        <!-- Phần Thông tin liên hệ -->
+        <div class="contact-info cv-section">
+            <h2>Thông Tin Liên Hệ</h2>
+            <p><span>Địa chỉ:</span>289 Tô Hiến Thành , Phường 13, Q10, Thành phố Hồ Chí Minh</p>
+            <p><span>Số điện thoại:</span> 0396801131</p>
+            <p><span>Email:</span> tranthanhtrucvo@gmail.com</p>
+        </div>
+
+        <!-- Phần Kỹ năng -->
+        <div class="skills cv-section">
+            <h2>Kỹ Năng</h2>
+            <ul>
+                <li>Lập trình C++</li>
+                <li>Lập trình HTML, CSS</li>
+                <li>Thuyết trình</li>
+                <li>Làm việc nhóm</li>
+                <li>Giao tiếp</li>
+            </ul>
+        </div>
+
+        <!-- Phần Sở thích -->
+        <div class="hobbies cv-section">
+            <h2>Sở Thích</h2>
+            <ul>
+                <li>Cầu lông</li>
+                <li> Bóng chuyền</li>
+                <li>Du lịc</li>
+            </ul>
+        </div>
                 <h2>Giới Thiệu Bản Thân</h2>
                 <p class="bio"> Người vui vẻ, hoạt bát,cởi mở.</p>
             </div>
